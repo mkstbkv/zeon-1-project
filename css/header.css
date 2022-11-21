@@ -1,0 +1,76 @@
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 64px;
+}
+
+.logo {
+    margin: auto 149px auto 0;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    padding-left: 6px;
+    color: #0F2A59;
+    text-decoration: none;
+}
+
+.page-nav {
+    margin: auto 422px auto 0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-list {
+    position: relative;
+    padding-right: 24px;
+    background: url(../images/line.png) no-repeat 100% 50%;
+}
+
+.nav-list:last-child {
+    background: none;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #181818;
+    padding-right: 13px;
+    padding-left: 20px;
+    text-decoration: none;
+    background: url(../images/stroke.png) no-repeat 100% 50%;
+}
+
+.languages {
+    min-width: 100px;
+    display: flex;
+    margin: auto 0;
+}
+
+.flag-buttons {
+    display: flex;
+    height: 100%;
+    margin: auto 0 auto 7px;
+}
+
+.flag-button {
+    border: 0;
+    margin: auto 16px auto 0;
+    padding: 0;
+}
+
+.flag-button img {
+    width: 24px;
+    height: 18px;
+}
+
+.btn-ru {
+    margin: 0;
+}
