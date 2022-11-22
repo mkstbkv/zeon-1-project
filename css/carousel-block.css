@@ -2,6 +2,7 @@
     min-height: 568px;
     background: url(../upload/carousel.png) 0 0 no-repeat;
     background-size: cover;
+    margin-bottom: 32px;
 }
 
 .boxes {

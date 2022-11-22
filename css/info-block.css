@@ -1,0 +1,68 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 104px;
+}
+
+.card {
+    width: 368px;
+    min-height: 130px;
+    border-left: 5px solid #0F2A59;
+    background: #F8F8F8;
+}
+
+.card a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 16px 16px 4px 16px;
+    text-decoration: none;
+    color: #181818;
+}
+
+.card p {
+    line-height: 24px;
+    margin: 0 16px;
+}
+
+.card-1 {
+    border-left-color: #EBEBEB;
+    background: url(../images/work.png) no-repeat 100% 50%;
+    margin-right: 32px;
+}
+
+.card-1 a{
+    font-weight: 400;
+}
+
+.card-2 {
+    background: url(../images/setting.png) no-repeat 100% 50%;
+    margin-right: 32px;
+}
+
+.card-3 {
+    background: url(../images/tickSquare.png) no-repeat 100% 50%;
+}
+
+@media screen and (max-width: 820px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        align-self: center;
+        margin: 0 32px 20px 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+}
