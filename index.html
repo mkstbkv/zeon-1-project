@@ -10,15 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/carousel-block.css">
+    <link rel="stylesheet" href="css/news-block.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="container">
             <div class="toolbar">
                 <div class="logo">
                     <a href="#">Лого</a>
                 </div>
+
                 <nav class="page-nav">
                     <ul class="nav">
                         <li class="nav-list">
@@ -32,6 +35,7 @@
                         </li>
                     </ul>
                 </nav>
+
                 <div class="languages">
                     <p>Язык:</p>
                     <div class="flag-buttons">
@@ -43,10 +47,34 @@
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
     <main>
+        <div class="carousel-block">
+            <div class="container">
+                <div class="boxes">
+
+                    <div class="box">
+                        <div class="text-card">
+                            <h2>Теплосети</h2>
+                            <p>Тепло в каждый уголок нашей страны</p>
+                            <button type="button">Подробнее о нас</button>
+                        </div>
+                        <img src="upload/manWoman.png" alt="manWoman">
+                    </div>
+
+                    <div class="carousel-buttons">
+                        <button type="button" class="arrowL-btn"></button>
+                        <button type="button" class="arrowR-btn"></button>
+                    </div>
+
+                    <div class="ellipse"></div>
+
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 

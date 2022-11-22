@@ -1,7 +1,7 @@
 .toolbar {
     display: flex;
     flex-wrap: wrap;
-    height: 64px;
+    min-height: 64px;
 }
 
 .logo {
@@ -18,7 +18,7 @@
 }
 
 .page-nav {
-    margin: auto 422px auto 0;
+    margin: auto 0 auto 0;
 }
 
 .nav {
@@ -28,7 +28,6 @@
 }
 
 .nav-list {
-    position: relative;
     padding-right: 24px;
     background: url(../images/line.png) no-repeat 100% 50%;
 }
@@ -51,7 +50,7 @@
 .languages {
     min-width: 100px;
     display: flex;
-    margin: auto 0;
+    margin: auto 8px auto auto;
 }
 
 .flag-buttons {
@@ -64,6 +63,7 @@
     border: 0;
     margin: auto 16px auto 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .flag-button img {
@@ -73,4 +73,36 @@
 
 .btn-ru {
     margin: 0;
+}
+
+
+@media screen and (max-width: 870px) {
+    .logo {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .toolbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo, .page-nav, .languages {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .nav-list {
+        text-align: center;
+        margin-bottom: 10px;
+        background: none;
+    }
 }
