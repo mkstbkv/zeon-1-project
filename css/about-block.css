@@ -1,0 +1,226 @@
+.about-block {
+    margin-bottom: 80px;
+}
+
+.about-1, .about-2, .about-3 {
+    height: 480px;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.about-1 {
+    background: url(../upload/picture-1.png) no-repeat 0 #FAFAFACC;
+}
+
+.about-2 {
+    background: #FAFAFACC url(../upload/picture-2.png) 368px 0 no-repeat;
+}
+
+.about-3 {
+    background: #FAFAFACC url(../upload/picture-3.png) 0 no-repeat;
+}
+
+.about-card {
+    width: 540px;
+    min-height: 365px;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+}
+
+.about-1 .about-card {
+    top: 57px;
+    right: 64px;
+}
+
+.about-2 .about-card {
+    top: 48px;
+    left: 64px;
+}
+
+.about-3 .about-card {
+    top: 47px;
+    right: 44px;
+}
+
+.about-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 48px 48px 10px 48px;
+    padding: 0;
+}
+
+.about-text {
+    font-weight: 400;
+    line-height: 20px;
+    color: #B6B6B6;
+    margin: 0 48px 20px 48px;
+}
+
+.about-button {
+    border: 1px solid #0F2A59;
+    background: none;
+    padding: 9px 71px 10px 71px;
+    width: 260px;
+    height: 40px;
+    color: #0F2A59;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 48px 58px 48px;
+}
+
+.about-button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.about-button:active {
+    background: #ccc;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-1, .about-2, .about-3 {
+        max-width: 800px;
+        height: 360px;
+        margin: 0 auto 40px auto;
+    }
+
+    .about-1 {
+        background: #FAFAFACC url(../upload/picture-1.png) no-repeat;
+        background-size: 80% 100%;
+        background-position-x: left;
+        background-position-y: 100%;
+    }
+
+    .about-2 {
+        background: #FAFAFACC url(../upload/picture-2.png) no-repeat;
+        background-size: 80% 100%;
+        background-position-x: right;
+    }
+
+    .about-3 {
+        background: #FAFAFACC url(../upload/picture-3.png) no-repeat;
+        background-size: 80% 100%;
+        background-position-x: left;
+    }
+
+    .about-card {
+        width: 400px;
+        min-height: 200px;
+        top: 10%;
+        text-align: center;
+    }
+
+    .about-1 .about-card {
+        right: 10%;
+    }
+
+    .about-2 .about-card {
+        left: 10%;
+    }
+
+    .about-3 .about-card {
+        right: 10%;
+    }
+
+    .about-title {
+        font-size: 18px;
+        margin: 0 15px 10px 15px;
+        padding: 0;
+    }
+
+    .about-text {
+        margin: 0 15px 20px 15px;
+    }
+
+    .about-button {
+        padding: 9px 31px;
+        width: 200px;
+        height: 40px;
+        margin: 0 15px 18px 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-1, .about-2, .about-3 {
+        max-width: 530px;
+        min-height: 400px;
+        position: static;
+        margin: 0 auto 30px auto;
+        background: none;
+        text-align: center;
+        border-left: 5px solid #0F2A59;
+    }
+
+    .about-card {
+        position: static;
+        min-height: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .about-title {
+        font-size: 16px;
+        line-height: 10px;
+        margin: 15px;
+        padding: 0;
+    }
+
+    .about-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #B6B6B6;
+        margin: 0 15px 20px 15px;
+        text-align: left;
+    }
+
+    .about-button {
+        padding: 9px 31px;
+        width: 200px;
+        height: 40px;
+        margin: 0 15px 58px 15px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .about-1, .about-2, .about-3 {
+        max-width: 300px;
+        min-height: 500px;
+        position: static;
+        margin: 0 auto 30px 0;
+    }
+
+    .about-card {
+        max-width: 270px;
+        min-height: 450px;
+        margin: 0;
+    }
+
+    .about-title {
+        max-width: 250px;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 15px 0;
+        padding: 0;
+    }
+
+    .about-text {
+        max-width: 250px;
+        font-size: 14px;
+        margin: 0 15px 20px 15px;
+        text-align: left;
+    }
+
+    .about-button {
+        padding: 9px 31px;
+        width: 200px;
+        height: 40px;
+        margin: 0 15px 18px 15px;
+    }
+}
+
