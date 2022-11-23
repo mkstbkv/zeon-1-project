@@ -1,0 +1,113 @@
+.footer {
+    background: #181818;
+    min-height: 478px;
+    color: #fff;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 56px 0 27px 0;
+    border-bottom: 1px solid #212121;
+}
+
+.contacts {
+    width: 250px;
+}
+
+.contacts p {
+    max-width: 200px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin: 0 0 21px 0;
+}
+
+.contacts ul {
+    max-width: 200px;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #262626;
+}
+
+.contacts ul:last-child {
+    border: none;
+}
+
+.contacts li {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding-left: 32px;
+    margin-bottom: 18px;
+}
+
+.contacts a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacts a:hover {
+    color: greenyellow;
+}
+
+.contacts li:first-child {
+    margin-top: 21px;
+}
+
+.contacts li:last-child {
+    margin-bottom: 21px;
+}
+
+.phone {
+    background: url(../images/phone.svg) no-repeat 0 50%;
+}
+
+.facebook {
+    background: url(../images/fb.svg) no-repeat 0 50%;
+}
+
+.insta {
+    background: url(../images/insta.svg) no-repeat 0 50%;
+}
+
+.youtube {
+    background: url(../images/yt.svg) no-repeat 0 50%;
+}
+
+.location {
+    background: url(../images/location.svg) no-repeat 0 50%;
+}
+
+.footer-text p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 16px 0;
+}
+
+@media screen and (max-width: 1170px) {
+    .footer-box {
+        justify-content: center;
+    }
+
+    .map img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .map img {
+        max-width: 300px;
+    }
+}
+
+
+

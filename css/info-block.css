@@ -12,6 +12,12 @@
     background: #F8F8F8;
 }
 
+.card:hover {
+    cursor: pointer;
+    background: rgba(27,50,70,0.87);
+    color: #fff;
+}
+
 .card a {
     display: inline-block;
     font-weight: 700;
@@ -21,6 +27,11 @@
     text-decoration: none;
     color: #181818;
 }
+
+.card a:hover {
+    color: aquamarine;
+}
+
 
 .card p {
     line-height: 24px;

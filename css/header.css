@@ -47,6 +47,10 @@
     background: url(../images/stroke.png) no-repeat 100% 50%;
 }
 
+.nav-link:hover {
+    font-weight: 700;
+}
+
 .languages {
     min-width: 100px;
     display: flex;
@@ -75,6 +79,10 @@
     margin: 0;
 }
 
+.burger {
+    display: none;
+}
+
 
 @media screen and (max-width: 870px) {
     .logo {
@@ -84,25 +92,102 @@
 
 @media screen and (max-width: 670px) {
     .toolbar {
-        flex-direction: column;
-        justify-content: center;
+        display: none;
     }
 
-    .logo, .page-nav, .languages {
+    .burger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .logo {
         margin: 0 auto;
     }
-}
 
-@media screen and (max-width: 460px) {
-    .nav {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 10px;
+        right:20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 2;
     }
 
-    .nav-list {
-        text-align: center;
-        margin-bottom: 10px;
-        background: none;
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: .25s;
+    }
+    .menu-btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu-btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu-box{
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 250px;
+        margin: 0;
+        padding: 20px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+        transition-duration: .25s;
+        z-index: 1;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+
+    .menu-item:hover {
+        background-color: #CFD8DC;
+    }
+
+    #menu-toggle{
+        opacity: 0;
+    }
+
+    #menu-toggle:checked ~ .menu-btn > span{
+        transform: rotate(45deg);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::before{
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu-toggle:checked ~ .menu-box{
+        visibility: visible;
+        right: 0;
+    }
+
+    .languages {
+        padding: 12px 48px;
     }
 }

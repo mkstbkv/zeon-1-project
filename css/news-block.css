@@ -16,6 +16,10 @@
     color: #fff;
 }
 
+.news-cards a:hover{
+    color: greenyellow;
+}
+
 .news-card-1 {
     display: flex;
     flex-direction: column;
