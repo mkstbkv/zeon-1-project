@@ -3,6 +3,10 @@
     margin: 32px 0 93px 0;
 }
 
+.about-link {
+    font-weight: 700;
+}
+
 .box-title {
     font-size: 32px;
     font-weight: 700;
